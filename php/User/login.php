@@ -23,17 +23,17 @@ if($stmt){
 
      $user_arr=array(
             "status" => true,
-            "message" => "Successfully Login!",
             "id" => $row["ID"],
             "username" => $user->username,
             "score" => $row["score"],
         );
+
     }
 else{
     
     $user_arr=array(
         "status" => false,
-        "message" => "Invalid Username or Password!",
+        "message" => "Cont inexistent sau parola gresita!",
     );
 }
 
